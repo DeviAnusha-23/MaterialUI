@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
+import HeroDivider from './HeroDivider'
 
 const HeroText = () => {
   return (
@@ -8,12 +9,16 @@ const HeroText = () => {
         display:'flex',
         width:'270px',
         height:'50px',
-        justifyContent:'left',
+        justifyContent:'center',
         alignItems:'center' ,
-        marginTop:'130px'   }}>
-        <Typography variant="h6"> 
+        marginTop:'130px'  
+         }}>
+          <Box>
+            <HeroDivider/>
+          </Box>
+        {/* <Typography variant="h6"> 
             our postgraduate programme
-        </Typography>
+        </Typography> */}
     </Box>
   )
 }
